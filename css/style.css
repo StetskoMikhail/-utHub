@@ -1,34 +1,93 @@
 body {
-    margin: 0; /* Убираем отступы по умолчанию у body */
-    background-color: white; /* Устанавливаем белый фон страницы */
+	margin: 0; /* Убираем отступы по умолчанию у body */
+	background-image: url('img/bshop-1.jpg'); 
+	background-repeat: no-repeat; 
+	background-size: cover;    
+	background-attachment: fixed; 
+	font-family: Arial, sans-serif;
 }
 
 .navbar {
-    display: flex;
-    align-items: center;
-    background-color: black;
-    height: 120px;
-    justify-content: center; /* Центрируем содержимое */
+	display: flex;
+	align-items: center;
+	background-color: rgba(0, 0, 0, 0.8); /* Полупрозрачный черный фон */
+	height: 120px;
+	justify-content: center; /* Центрируем содержимое */
 }
 
 .navbar img {
-    max-width: 220px;
-    height: 70px;
-    margin-right: 300px; /* Отодвигаем логотип влево */
+	max-width: 220px;
+	height: 70px;
+	margin-right: 300px; /* Отодвигаем логотип влево */
 }
 
 .nav-list {
-    list-style: none; /* Убираем маркеры списка */
-    padding: 0;
-    display: flex; /* Используем flexbox для горизонтального расположения */
-    font-size: 18px;
+	list-style: none; /* Убираем маркеры списка */
+	padding: 0;
+	display: flex; /* Используем flexbox для горизонтального расположения */
+	font-size: 18px;
 }
 
 .nav-list li {
-    margin-left: 20px; /* Отступ между пунктами меню */
+	margin-left: 20px; /* Отступ между пунктами меню */
 }
 
 .nav-list a {
-    color: white; /* Цвет текста ссылок */
-    text-decoration: none; /* Убираем подчеркивание */
+	color: white; /* Цвет текста ссылок */
+	text-decoration: none; /* Убираем подчеркивание */
+}
+
+.nav-list a:hover {
+	background-color: #ddd;
+	color: black;
+}
+
+.card-container {
+	display: flex;
+	justify-content: center;
+	gap: 20px;
+	padding: 20px;
+}
+
+.card {
+	background-color: #fff;
+	border-radius: 10px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	padding: 20px;
+	text-align: center;
+	width: 200px;
+}
+
+.profile-pic {
+	border-radius: 50%;
+	width: 100px;
+	height: 100px;
+	object-fit: cover;
+}
+
+.rating {
+	margin-top: 10px;
+	font-size: 14px;
+	color: #555;
+}
+
+.masters-section {
+	padding: 20px;
+	text-align: center;
+	color: black;
+}
+
+.master {
+	display: inline-block;
+	margin: 10px;
+}
+
+.master img {
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+}
+
+.master h2 {
+	margin-top: 10px;
 }

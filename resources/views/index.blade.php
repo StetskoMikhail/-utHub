@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="{{asset('resources/css/style.css')}}">
 </head>
 <body>
     <div class="navbar">
         <div>
-            <img src="/img/logo.svg"> 
+            <img src="{{asset('public/images/logo.svg')}}"> 
         </div>
         <nav>
             <ul class="nav-list"> 
@@ -27,8 +27,8 @@
 		<p>Выберите мастера для записи</p>
 	 </div>
     <div class="card-container">
-        <div class="card">
-            <img src="img/photo_2024-10-02_20-35-38.jpg" alt="Даша" class="profile-pic">
+        <div class="card"> 
+            <img src="{{asset('public/images/1.jpg')}}" alt="Даша" class="profile-pic">
             <h2>Даша</h2>
             <div class="rating">
                 <span>⭐⭐⭐⭐⭐</span>
@@ -36,7 +36,7 @@
             </div>
         </div>
         <div class="card">
-            <img src="img/photo_2024-10-02_20-35-37.jpg" alt="Никита" class="profile-pic">
+            <img src="{{asset('public/images/2.jpg')}}" alt="Никита" class="profile-pic">
             <h2>Никита</h2>
             <div class="rating">
                 <span>⭐⭐⭐⭐</span>
@@ -44,7 +44,7 @@
             </div>
         </div>
         <div class="card">
-            <img src="img/photo_2024-10-02_20-35-37 (2).jpg" alt="Михаил" class="profile-pic">
+            <img src="{{asset('public/images/3.jpg')}}" alt="Михаил" class="profile-pic">
             <h2>Михаил</h2>
             <div class="rating">
                 <span>⭐⭐⭐⭐⭐</span>
